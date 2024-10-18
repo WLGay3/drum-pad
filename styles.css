@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #282828;   
+}
+
+.drumkit {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100)
+}
+
+.pad {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    background: radial-gradient( #ff68eb, #971381);
+    flex: 1 0 calc(33.333% - 20px);
+    border-radius: 10px; 
+    
+
+}
+
+.pad:active {
+    background: rgb(3, 167, 196);
+    
+}
+
+
+/* makes it so the sound will play even if you click on the image */
+.pad img {
+    width: 150px;
+    pointer-events: none;
+}
